@@ -20,6 +20,7 @@ namespace Editor
             editor.Vytvor();
             editor.Serializuj();
 
+
             Console.ReadLine();
 
         }

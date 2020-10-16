@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Editor
 {
-    class EditorHrdiny : BazovyEditor<Hrdina>
+    class EditorHrdiny : BazovyEditor2<Hrdina>
     {
         public EditorHrdiny()
         {

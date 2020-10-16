@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace DungeonCrawl
 {
+    [DataContract(Name = "Kostka")]
     public class Kostka
     {
         private Random random;
+        [DataMember]
         private int DolniHranice { get; set; }
+        [DataMember]
         private int HorniHranice { get; set; }
         public Kostka()
         {
