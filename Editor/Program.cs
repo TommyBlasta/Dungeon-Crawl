@@ -12,10 +12,12 @@ namespace Editor
             editor.Deserializuj();
             foreach (Hrdina hrdina in editor.Objekty)
             {
-                Console.WriteLine(hrdina.SilovaKostka.ToString());
-                Console.WriteLine(hrdina.ObratnostKostka.ToString());
-                Console.WriteLine(hrdina.IntelektKostka.ToString());
-                Console.WriteLine(hrdina.Zdravi.ToString());
+                Console.WriteLine("Jmeno: " + hrdina.Jmeno);
+                Console.WriteLine("Silova koskta: " +  hrdina.SilovaKostka.ToString());
+                Console.WriteLine("Obratnost koskta: " + hrdina.ObratnostKostka.ToString());
+                Console.WriteLine("Intelekt koskta: " + hrdina.IntelektKostka.ToString());
+                Console.WriteLine("Zdravi: " + hrdina.Zdravi.ToString());
+                Console.WriteLine("----------------------------------------------------------");
             }
             editor.Vytvor();
             editor.Serializuj();
