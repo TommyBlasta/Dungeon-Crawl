@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace DungeonCrawl
 {
-    public class Hrdina
+    public class Hrdina : INotifyPropertyChanged
     {
         public Hrdina()
         {
@@ -23,6 +24,9 @@ namespace DungeonCrawl
             IntelektKostka = intelekt;
             ObratnostKostka = obratnost;
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public void Utok()
         {
 

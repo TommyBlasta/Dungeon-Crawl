@@ -5,7 +5,7 @@ using DungeonCrawl;
 
 namespace Editor
 {
-    class EditorNepritele : BazovyEditor<Nepritel>
+    class EditorNepritele : BazovyEditor2<Nepritel>
     {
         public EditorNepritele()
         {

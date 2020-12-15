@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DungeonCrawl.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,8 +9,8 @@ namespace DungeonCrawl
     {
         private string text;
         private int identifikator;
-
-        public string Text { get => text; set => text = value; }
+        public string Text { get => ObjektPolozky.Nazev; }
         public int Identifikator { get => identifikator; set => identifikator = value; }
+        public IInterakce ObjektPolozky { get; set; }
     }
 }
